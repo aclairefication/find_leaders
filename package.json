@@ -1,0 +1,19 @@
+{
+  "name": "find_leaders",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test-pageload-performance.js",
+  "scripts": {
+    "test": "ava --verbose"
+  },
+  "keywords": [],
+  "author": "cam",
+  "license": "ISC",
+  "devDependencies": {},
+  "devDependencies": {
+    "selenium-webdriver": "^3.4.0",
+    "json2csv": "^3.7.3",
+    "fs": "^0.0.1-security",
+    "cucumber": "^2.0.0-rc.9"
+  }
+}
