@@ -52,4 +52,6 @@ leader_links.then(function(elements){
 		console.log(allJSON);
 		make_csv(leadersJSON);
 	});
+}).then(function(){
+	browser.quit();
 });
