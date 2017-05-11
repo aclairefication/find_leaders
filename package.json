@@ -14,6 +14,7 @@
     "selenium-webdriver": "^3.4.0",
     "json2csv": "^3.7.3",
     "fs": "^0.0.1-security",
-    "cucumber": "^2.0.0-rc.9"
+    "ava": "^0.16.0",
+    "chai": "^3.5.0"
   }
 }

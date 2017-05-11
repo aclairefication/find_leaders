@@ -7,6 +7,7 @@ Selenium Test case for the following workflow:
 4. End scenario
 
 Tech stack:
-- Selenium
-- Cucumber
-- Page Object model design pattern
+- Selenium (for UI automation since it's specified)
+- Page Object model design pattern (hand-built page objects)
+- Ava (test runner)
+- Chai (asserts)

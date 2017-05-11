@@ -4,6 +4,9 @@ var fs = require('fs');
 var json2csv = require('json2csv');
 var promise = require('selenium-webdriver').promise;
 var webdriver = require('selenium-webdriver');
+var ava = require('ava');
+var chai = require('chai');
+var expect = chai.expect;
 
 //Refactored to use Page Object Pattern
 var MailchimpHomePage = require('./lib/mailchimp-home-page.js');
@@ -12,8 +15,12 @@ var MailchimpAboutPage = require('./lib/mailchimp-about-page.js');
 var driver = new webdriver.Builder().withCapabilities(webdriver.Capabilities.chrome()).build();
 var mailchimpHomePage = new MailchimpHomePage(driver);
 mailchimpHomePage.visit();
+//TODO assert that About link is present
+//TODO assert that About link displays correct text
+
 var mailchimpAboutPage = mailchimpHomePage.clickAboutLink();
 var leader_links = mailchimpAboutPage.getLeaderLinks();
+//TODO assert that there are 12 leader links
 
 var make_csv = function(json){
 	json2csv({data: json, fields: ['name', 'position', 'description']}, function(err, csv) {
