@@ -25,20 +25,29 @@ var get_leader_details = function (elem){
 
 		var leaderJSON = {"name":"","position":"", "description": ""}
 
-		get_leader_name(elem).then(function(leader_name){
-			console.log(leader_name);
-			leaderJSON.name = leader_name;
-		});
+		promise.all([get_leader_name(elem), get_leader_position(elem), get_leader_description(elem)])
+			.then(function(results){
+				leaderJSON.name = results[0];
+				leaderJSON.position = results[1];
+				leaderJSON.description = results[2];
+			});
 
-		get_leader_position(elem).then(function(leader_position){
-			console.log(leader_position);
-			leaderJSON.position = leader_position;
-		});
+		// .then(function(leader_name){
+		// 	console.log(leader_name);
+		// 	leaderJSON.name = leader_name;
+		// }).then(function(){
+		// 	.then(function(leader_position){
+		// 		console.log(leader_position);
+		// 		leaderJSON.position = leader_position;
+		// 	});			
+		// });
 
-		get_leader_description(elem).then(function(leader_description){
-			console.log(leader_description);
-			leaderJSON.description = leader_description;
-		});
+
+
+		// .then(function(leader_description){
+		// 	console.log(leader_description);
+		// 	leaderJSON.description = leader_description;
+		// });
 
 		return leaderJSON;
 };
