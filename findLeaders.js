@@ -32,23 +32,6 @@ var get_leader_details = function (elem){
 				leaderJSON.description = results[2];
 			});
 
-		// .then(function(leader_name){
-		// 	console.log(leader_name);
-		// 	leaderJSON.name = leader_name;
-		// }).then(function(){
-		// 	.then(function(leader_position){
-		// 		console.log(leader_position);
-		// 		leaderJSON.position = leader_position;
-		// 	});			
-		// });
-
-
-
-		// .then(function(leader_description){
-		// 	console.log(leader_description);
-		// 	leaderJSON.description = leader_description;
-		// });
-
 		return leaderJSON;
 };
 
