@@ -13,6 +13,9 @@ Tech stack:
 - Chai (asserts)
 
 To execute
+Install ava globally
+[a ava on github](https://github.com/avajs/ava)
+
 ```
 npm install
 npm test
