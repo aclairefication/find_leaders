@@ -11,3 +11,17 @@ Tech stack:
 - Page Object model design pattern (hand-built page objects)
 - Ava (test runner)
 - Chai (asserts)
+
+To execute automation
+
+[Install ava globally](https://github.com/avajs/ava#usage)
+
+```
+npm install
+npm test
+```
+
+To execute CSV export without running automation
+```
+node findLeaders.js
+```
