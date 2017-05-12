@@ -12,7 +12,7 @@ Tech stack:
 - Ava (test runner)
 - Chai (asserts)
 
-To execute
+To execute automation
 
 [Install ava globally](https://github.com/avajs/ava#usage)
 
