@@ -11,3 +11,9 @@ Tech stack:
 - Page Object model design pattern (hand-built page objects)
 - Ava (test runner)
 - Chai (asserts)
+
+To execute
+```
+npm install
+npm test
+```
