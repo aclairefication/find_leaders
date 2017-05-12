@@ -20,3 +20,8 @@ To execute
 npm install
 npm test
 ```
+
+To execute CSV export without running automation
+```
+node findLeaders.js
+```
