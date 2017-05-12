@@ -14,8 +14,7 @@ Tech stack:
 
 To execute
 
-Install ava globally
-[ava on github](https://github.com/avajs/ava)
+[Install ava globally](https://github.com/avajs/ava#usage)
 
 ```
 npm install
